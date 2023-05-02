@@ -20,5 +20,5 @@ fun solve(nums: List<Int>): Int {
 fun main(args: Array<String>) {
     val lines = Bootstrap(args).readAllLines()
     val nums = lines.map { it.toInt() }
-    println(solve(nums));
+    println(solve(nums))
 }
