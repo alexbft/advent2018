@@ -27,5 +27,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="jetbrains.kotlinx.datetime.jvm" level="project" />
   </component>
 </module>
