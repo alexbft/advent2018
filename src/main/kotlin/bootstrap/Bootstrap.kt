@@ -8,7 +8,7 @@ class Bootstrap(args: Array<String>) {
     val inputFilePath: Path = Paths.get("resources", args[0]).toAbsolutePath().normalize()
 
     fun readAllText(): String {
-        return File(inputFilePath.toString()).readText()
+        return File(inputFilePath.toString()).readText().trimEnd()
     }
 
     fun readAllLines(): List<String> {
