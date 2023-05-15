@@ -59,6 +59,8 @@ fun solve(initialState: String, rulesRaw: List<String>): Long {
         0
     }
     println("Shift = $shift")
+    //println(prevState.plus.joinToString(""))
+    //println(state.plus.joinToString(""))
     val bigShift = shift.toLong() * (50_000_000_000L - SIMULATE_GENS)
     return (-state.minus.size until state.plus.size).filter { state.get(it) == '#' }.sumOf { it + bigShift }
 }
