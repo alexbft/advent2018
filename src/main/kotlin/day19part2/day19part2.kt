@@ -82,7 +82,7 @@ fun solve(lines: List<String>): Int {
     var registers = Array(6) { 0 }.toMutableList()
     registers[0] = 1
     var ip = 0
-    // The program seems to calculate a sum of all divisors of reg[5]
+    // The program seems to calculate the sum of all divisors of reg[5] in a very inefficient way
     // Do some iterations so reg[5] is initialized and calculate the sum directly
     for (iter in 0..1000) {
         if (ip !in program.indices) {
