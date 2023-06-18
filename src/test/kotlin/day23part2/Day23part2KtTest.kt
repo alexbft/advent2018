@@ -18,4 +18,16 @@ class Day23part2KtTest {
         """.trimIndent().lines()
         assertEquals(SolveResult(Point3(12, 12, 12), listOf(0, 1, 2, 3, 4)), solveFull(input))
     }
+
+    @Test
+    fun counter() {
+        val input = """
+            pos=<-1000,-1000,-1000>, r=1
+            pos=<-1100,-1000,-1000>, r=1
+            pos=<-1200,-1000,-1000>, r=1
+            pos=<1000,1000,1000>, r=1
+            pos=<1001,1000,1000>, r=1
+        """.trimIndent().lines()
+        assertEquals(SolveResult(Point3(1000, 1000, 1000), listOf(3, 4)), solveFull(input))
+    }
 }
